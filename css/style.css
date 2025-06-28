@@ -244,7 +244,7 @@ body {
 .hero-content h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  background-color: rgba(255, 255, 255, 0.7);
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
   display: inline-block;
   padding: 10px 20px;
   border-radius: 10px;
@@ -265,3 +265,140 @@ body {
   background-color: #333;
   color: #fff;
 }
+
+/* Welcome Grid Section */
+.welcome-grid {
+  display: flex;
+  gap: 20px;
+  padding: 10px 5% 40px 5%; /* top, right, bottom, left */
+  background-color: white;
+  height: 250px; /* LIMIT the height of the entire section */
+  overflow: hidden;
+}
+
+.grid-img {
+  height: 100%;
+}
+
+.img-25 {
+  flex: 1;
+}
+
+.img-50 {
+  flex: 2;
+}
+
+.grid-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image fills area without distortion */
+  border-radius: 10px;
+}
+
+
+/* Carousel Section */
+.carousel-section {
+  width: 90%;
+  max-width: 900px;       /* Optional: limit max width */
+  height: 300px;          /* Limit height */
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;           /* Make track fill container height */
+}
+
+.carousel-image {
+  min-width: 100%;
+  height: 100%;           /* Make images fill container height */
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.service-icons {
+  display: flex;
+  flex-wrap: nowrap;           /* Keep items in one line */
+  justify-content: space-around;
+  padding: 40px 5%;
+  background-color: white;
+  gap: 10px;                   /* Space between each icon block */
+}
+
+.service-icon {
+  flex: 0 0 auto;
+  max-width: 180px;
+  text-align: center;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.service-icon img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 4px;          /* ↓ Reduced from 6px */
+  padding: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color 0.3s ease, filter 0.3s ease;
+  filter: grayscale(0.7);
+  display: inline-block;
+}
+
+.service-icon:hover img {
+  background-color: #333;
+  filter: grayscale(0);
+}
+
+.service-icon:hover {
+  color: white;
+}
+
+.service-icon h3 {
+  margin: 0 0 2px;             /* ↓ Reduced from 3px */
+  font-size: 1.05rem;
+  transition: color 0.3s ease;
+}
+
+.service-icon p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.service-icon:hover h3,
+.service-icon:hover p {
+  color: #333;
+}
+
+.brand-sponsors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 60px; /* ⬅️ increased from 40px to 60px */
+  padding: 40px 5%;
+  background-color: white;
+}
+
+.brand-sponsors img {
+  height: 50px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.brand-sponsors img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
