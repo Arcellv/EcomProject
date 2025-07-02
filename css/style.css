@@ -251,9 +251,9 @@ body {
 }
 
 .hero-content button {
-  background-color: #fff;
-  color: #333;
-  border: 2px solid #333;
+  background-color: #555;
+  color: #fff;
+  border: 2px solid;
   padding: 10px 20px;
   font-size: 1rem;
   border-radius: 25px;
@@ -262,8 +262,7 @@ body {
 }
 
 .hero-content button:hover {
-  background-color: #333;
-  color: #fff;
+  background-color: #007bff;
 }
 
 /* Welcome Grid Section */
@@ -382,7 +381,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 60px; /* ⬅️ increased from 40px to 60px */
+  gap: 90px; /* ⬅️ increased from 40px to 60px */
   padding: 40px 5%;
   background-color: white;
 }
@@ -402,3 +401,319 @@ body {
   transform: scale(1.05);
 }
 
+/*Product showcase*/
+
+.product-showcase {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px 5%;
+  background-color: white;
+  flex-wrap: nowrap;
+}
+
+.product-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+  max-width: 22%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-img-wrapper {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.product-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.product-card h4 {
+  font-size: 1rem;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.product-card button {
+  padding: 8px 14px;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #555;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/*offer section*/
+.discount-offer {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 50px 5%;
+}
+
+.discount-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+
+.discount-overlay {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center;     /* horizontal center */
+  border-radius: 10px;
+}
+
+
+.discount-overlay h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.discount-overlay p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.discount-overlay button {
+  padding: 10px 24px;
+  background-color: white;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+
+.discount-overlay button:hover {
+  background-color: #ddd;
+}
+
+/*Login page*/
+
+.auth-body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #ffffff; /* white background */
+}
+
+.auth-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.auth-left {
+
+  flex: 1;
+  padding: 50px;
+  color: white;
+  background-image: url('../assets/images/img15.jpg'); /* adjust path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-left h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.brand-name {
+  color: #fff;
+}
+
+/* Update auth-right to center the form inside a container */
+.auth-right {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-form {
+  width: 90%;
+  max-width: 400px;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 15px;             /* ⬅️ Rounded border */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.auth-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-form button:hover {
+  background-color: #007bff;
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.auth-switch a {
+  color: #007bff;
+}
+
+/*Sign Up*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'poppins', sans-serif;
+}
+
+.background-blur {
+  background: url('/assets/images/img5.jpg') no-repeat center center/cover;
+  filter: blur(6px);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.signup-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.signup-form .form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.signup-form label {
+  display: block;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 12px;
+  background: #555;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.signup-form button:hover {
+  background: #007bff;
+}
