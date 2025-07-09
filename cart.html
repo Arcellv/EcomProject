@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Cart - MHLAS</title>
+  <link rel="stylesheet" href="css/cart.css" />
+</head>
+<body>
+
+  <!-- Header -->
+    <header class="site-header">
+      <div class="logo">MHLAS</div>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="signup.html">SignUp</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-icons">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Search..." />
+          <i class="fas fa-search" id="searchIcon"></i>
+        </div>
+        <div class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count" style="display: none;"></span>
+        </div>
+      </div>
+    </header>
+  <main class="cart-main">
+
+    <!-- Hero -->
+    <section class="cart-hero">
+      <h1>Your Cart</h1>
+      <p>Review your items and complete your purchase</p>
+    </section>
+
+    <!-- Cart Items -->
+    <section class="cart-items-section">
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>Total</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- More items dynamically added here -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Order Summary -->
+   <section class="order-summary">
+      <h2>Order Summary</h2>
+      <p>Subtotal: <strong id="subtotal-amount">$0</strong></p>
+      <p>Delivery: <strong>$20</strong></p>
+      <p>Total: <strong id="total-amount">$0</strong></p>
+      <button class="checkout-btn">Proceed to Checkout</button>
+    </section>
+  </main>
+
+  <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- Brand Info -->
+        <div class="footer-box">
+          <h3>MHLAS</h3>
+          <p>
+            Your go-to destination for phones, laptops, and smart gadgets.
+            Explore quality tech at affordable prices.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-box">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Support -->
+        <div class="footer-box">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-box">
+          <h4>Subscribe</h4>
+          <p>Get updates on new tech & offers.</p>
+          <form>
+            <input type="email" placeholder="Your Email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- External JS -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

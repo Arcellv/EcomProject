@@ -24,13 +24,16 @@
     <!-- Header -->
     <header class="site-header">
       <div class="logo">MHLAS</div>
+      <div class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </div>
       <nav class="navbar">
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="product.html">Products</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Cart</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="contact.html">Contact</a></li>
           <li><a href="login.html">Login</a></li>
           <li><a href="signup.html">SignUp</a></li>
         </ul>
@@ -43,7 +46,7 @@
         </div>
         <div class="cart-icon">
           <i class="fas fa-shopping-cart"></i>
-          <!--span class="cart-count"></span-->
+          <span class="cart-count" style="display: none;"></span>
         </div>
       </div>
     </header>
@@ -52,13 +55,15 @@
       <!-- Hero / Welcome Section -->
 
       <section class="hero-section">
-        <img src="assets/images/img5.jpg" alt="" />
-
-        <div class="hero-content">
-          <h1>Welcome to MHLAS</h1>
-          <button>Shop Now</button>
+        <div class="hero-content-wrapper">
+          <img src="assets/images/img5.jpg" alt=""/>
+          <div class="hero-content">
+            <h1>Welcome to MHLAS</h1>
+            <button>Shop Now</button>
+          </div>
         </div>
       </section>
+
 
       <!-- Welcome Grid Section -->
       <section class="welcome-grid">
@@ -116,7 +121,7 @@
 
         <div class="product-card">
           <div class="product-img-wrapper">
-            <img src="assets/products/card11.jpg" alt="">
+            <img src="assets/products/card1.jpg" alt="">
           </div>
           <h4>Sony WH-1000XM5</h4>
           <p>$349</p>
@@ -124,7 +129,7 @@
 
         <div class="product-card">
           <div class="product-img-wrapper">
-            <img src="assets/products/card14.jpg" alt="">
+            <img src="assets/products/card1.jpg" alt="">
           </div>
           <h4>HP Spectre x360</h4>
           <p>$1199</p>
@@ -132,7 +137,7 @@
 
         <div class="product-card">
           <div class="product-img-wrapper">
-            <img src="assets/products/card20.jpg" alt="">
+            <img src="assets/products/card1.jpg" alt="">
           </div>
           <h4>Apple Watch Series 8</h4>
           <p>$399</p>
@@ -160,9 +165,8 @@
         <img src="assets/brands/hp.png" alt="HP">
         <img src="assets/brands/dell.png" alt="Dell">
       </section>
-
-
     </main>
+
     <!-- Footer -->
     <footer class="site-footer">
       <div class="footer-container">
@@ -179,11 +183,10 @@
         <div class="footer-box">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Deals</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </div>
 

@@ -15,6 +15,14 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+/* Hamburger Toggle Icon Style */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+  margin-left: auto;
+}
 
 .logo {
   font-size: 1.5rem;
@@ -87,16 +95,6 @@ body {
   padding: 2px 5px;
   border-radius: 50%;
 }
-
-/* Responsive Header */
-.menu-toggle {
-  display: none;
-  font-size: 20px;
-  color: white;
-  cursor: pointer;
-}
-
-
 /* Footer */
 .site-footer {
   background-color: #333;
@@ -251,7 +249,7 @@ body {
 }
 
 .hero-content button {
-  background-color: #555;
+  background-color: #333;
   color: #fff;
   border: 2px solid;
   padding: 10px 20px;
@@ -264,6 +262,34 @@ body {
 .hero-content button:hover {
   background-color: #007bff;
 }
+
+.hero-content-wrapper {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Adjust this one so it positions the text correctly */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: #333;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+}
+
 
 /* Welcome Grid Section */
 .welcome-grid {
@@ -532,306 +558,4 @@ body {
 
 .discount-overlay button:hover {
   background-color: #ddd;
-}
-
-/*Login page*/
-
-.auth-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  background-color: #ffffff; /* white background */
-}
-
-.auth-container {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-}
-
-.auth-left {
-
-  flex: 1;
-  padding: 50px;
-  color: white;
-  background-image: url('../assets/images/img15.jpg'); /* adjust path */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.auth-left h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-.brand-name {
-  color: #fff;
-}
-
-/* Update auth-right to center the form inside a container */
-.auth-right {
-  flex: 1;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.auth-form {
-  width: 90%;
-  max-width: 400px;
-  background-color: #f9f9f9;
-  padding: 30px;
-  border-radius: 15px;             /* ⬅️ Rounded border */
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-}
-
-.auth-form h2 {
-  color: #333;
-  margin-bottom: 20px;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.auth-form label {
-  display: block;
-  margin-top: 15px;
-  font-weight: 600;
-  color: #333;
-}
-
-.auth-form input {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 0.95rem;
-}
-
-.auth-form button {
-  width: 100%;
-  padding: 10px;
-  margin-top: 20px;
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.auth-form button:hover {
-  background-color: #007bff;
-}
-
-.auth-switch {
-  text-align: center;
-  margin-top: 15px;
-  font-size: 0.9rem;
-}
-
-.auth-switch a {
-  color: #007bff;
-}
-
-/*Sign Up*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body, html {
-  height: 100%;
-  font-family: 'poppins', sans-serif;
-}
-
-.background-blur {
-  background: url('/assets/images/img5.jpg') no-repeat center center/cover;
-  filter: blur(6px);
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.signup-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  padding: 40px 30px;
-  border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
-  width: 90%;
-  max-width: 400px;
-  text-align: center;
-}
-
-.heading {
-  font-size: 28px;
-  margin-bottom: 25px;
-  color: #333;
-}
-
-.signup-form .form-group {
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-.signup-form label {
-  display: block;
-  color: #333;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-.signup-form input {
-  width: 100%;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-}
-
-.signup-form button {
-  width: 100%;
-  padding: 12px;
-  background: #555;
-  border: none;
-  border-radius: 8px;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.signup-form button:hover {
-  background: #007bff;
-}
-
-/*Product page*/
-
-:root {
-  --blue: #007bff;
-  --white: #ffffff;
-  --dark-gray: #343a40;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--white);
-  color: var(--dark-gray);
-}
-
-.main-header {
-  background-color: var(--dark-gray);
-  color: var(--white);
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.main-header h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-  color: var(--dark-gray);
-}
-
-.product-section {
-  padding: 40px 20px;
-}
-
-.section-title {
-  font-size: 28px;
-  text-align: center;
-  margin-bottom: 30px;
-  color: var(--dark-gray);
-}
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
-}
-
-.product-card {
-  background-color: #f8f9fa;
-  border: 1px solid #dee2e6;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.2s ease-in-out;
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.product-card img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-.product-card h3 {
-  font-size: 20px;
-  margin-bottom: 5px;
-}
-
-.product-card p {
-  margin: 5px 0;
-}
-
-.price {
-  font-weight: bold;
-  color: var(--blue);
-}
-
-.product-card button {
-  background-color: var(--dark-gray);
-  color: var(--white);
-  border: none;
-  padding: 10px 20px;
-  border-radius: 6px;
-  cursor: pointer;
-  margin-top: 10px;
-  transition: background 0.3s ease;
-}
-
-.product-card button:hover {
-  background-color: #0062cc;
-}
-
-.filter-section {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.filter-section label {
-  font-weight: 600;
-  margin-right: 10px;
-  font-size: 16px;
-}
-
-.filter-section select {
-  padding: 10px 15px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 16px;
 }
