@@ -1,3 +1,6 @@
+import emailjs from 'https://cdn.emailjs.com/sdk/4.6.2/email.min.js';
+
+emailjs.init('your-user-id');
 
 // EmailJS script initialization
 (function () {

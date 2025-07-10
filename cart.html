@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-     <!-- Google Font -->
+  <head>
+    <!-- Google Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
       rel="stylesheet"
@@ -13,14 +13,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Cart - MHLAS</title>
-  <link rel="stylesheet" href="css/cart.css" />
-</head>
-<body>
-
-  <!-- Header -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Cart - MHLAS</title>
+    <link rel="stylesheet" href="css/cart.css" />
+  </head>
+  <body>
+    <!-- Header -->
     <header class="site-header">
       <div class="logo">MHLAS</div>
       <nav class="navbar">
@@ -35,54 +34,57 @@
         </ul>
       </nav>
 
-      <div class="header-icons">
+      <div class="header-actions">
         <div class="search-box">
           <input type="text" id="searchInput" placeholder="Search..." />
           <i class="fas fa-search" id="searchIcon"></i>
         </div>
         <div class="cart-icon">
           <i class="fas fa-shopping-cart"></i>
-          <span class="cart-count" style="display: none;"></span>
+          <span class="cart-count" style="display: none"></span>
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
         </div>
       </div>
     </header>
-  <main class="cart-main">
 
-    <!-- Hero -->
-    <section class="cart-hero">
-      <h1>Your Cart</h1>
-      <p>Review your items and complete your purchase</p>
-    </section>
+    <main class="cart-main">
+      <!-- Hero -->
+      <section class="cart-hero">
+        <h1>Your Cart</h1>
+        <p>Review your items and complete your purchase</p>
+      </section>
 
-    <!-- Cart Items -->
-    <section class="cart-items-section">
-      <table class="cart-table">
-        <thead>
-          <tr>
-            <th>Product</th>
-            <th>Price</th>
-            <th>Qty</th>
-            <th>Total</th>
-            <th>Remove</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- More items dynamically added here -->
-        </tbody>
-      </table>
-    </section>
+      <!-- Cart Items -->
+      <section class="cart-items-section">
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Qty</th>
+              <th>Total</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- More items dynamically added here -->
+          </tbody>
+        </table>
+      </section>
 
-    <!-- Order Summary -->
-   <section class="order-summary">
-      <h2>Order Summary</h2>
-      <p>Subtotal: <strong id="subtotal-amount">$0</strong></p>
-      <p>Delivery: <strong>$20</strong></p>
-      <p>Total: <strong id="total-amount">$0</strong></p>
-      <button class="checkout-btn">Proceed to Checkout</button>
-    </section>
-  </main>
+      <!-- Order Summary -->
+      <section class="order-summary">
+        <h2>Order Summary</h2>
+        <p>Subtotal: <strong id="subtotal-amount">$0</strong></p>
+        <p>Delivery: <strong>$20</strong></p>
+        <p>Total: <strong id="total-amount">$0</strong></p>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </section>
+    </main>
 
-  <!-- Footer -->
+    <!-- Footer -->
     <footer class="site-footer">
       <div class="footer-container">
         <!-- Brand Info -->
@@ -136,6 +138,5 @@
 
     <!-- External JS -->
     <script src="js/main.js"></script>
-
-</body>
+  </body>
 </html>

@@ -1,35 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Login - MHLAS</title>
-  <link rel="stylesheet" href="css/login.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/login.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body class="auth-body">
 
-  <div class="auth-container">
-    <div class="auth-left">
-      <h1>Welcome Back to <span class="brand-name">MHLAS</span></h1>
-      <p>Your trusted gadget store</p>
-    </div>
+  <form class="auth-form" action="#" method="POST">
+    <h2>Login</h2>
 
-    <div class="auth-right">
-      <form class="auth-form" action="#" method="POST">
-        <h2>Login</h2>
+    <label for="email">Email or Username</label>
+    <input type="text" id="email" name="email" placeholder="Enter your email or username" required>
 
-        <label for="email">Email or Username</label>
-        <input type="text" id="email" name="email" placeholder="Enter your email or username" required>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required>
 
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+    <button type="submit">Login</button>
 
-        <button type="submit">Login</button>
+    <p class="auth-switch">Don't have an account? <a href="signup.html">Sign up</a></p>
+  </form>
 
-        <p class="auth-switch">Don't have an account? <a href="signup.html">Sign up</a></p>
-      </form>
-    </div>
-  </div>
   <script src="js/auth.js"></script>
 </body>
 </html>

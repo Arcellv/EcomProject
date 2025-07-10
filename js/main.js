@@ -7,6 +7,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const subtotalElem = document.getElementById("subtotal-amount");
   const totalElem = document.getElementById("total-amount");
   const deliveryFee = 20;
+  const menuToggle = document.getElementById("menuToggle");
+  const navbar = document.querySelector(".navbar");
+
+  menuToggle.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+  });
 
   let isSearchOpen = false;
 
@@ -124,4 +130,3 @@ document.addEventListener("DOMContentLoaded", () => {
     renderCart(); // Initial render
   }
 });
-
